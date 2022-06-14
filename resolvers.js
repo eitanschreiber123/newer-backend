@@ -128,6 +128,8 @@ export const resolvers = {
         },
         categories: [],
         orders: [] })
+        const newUser = new RestaurantType(Data[0])
+        newUser.save()
         return Data
     },
     removeCategory: (_, { id, name }) => {
